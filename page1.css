@@ -1,0 +1,298 @@
+body{
+    height: 3000px;
+}
+/* 1ere partie*/
+header{
+  position: fixed;
+
+  display:flex;
+  width: 80%;
+  height:40px;
+  
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background: hsla(0,0%,100%,.98);
+    transition: box-shadow .25s ease 0s;
+   
+}
+
+.position{
+    display: inline-flex;
+}
+.div1{
+    display: inline-block;
+    margin-right: 100px;
+
+}
+
+.image{
+    width: 20%;
+    margin-right: 250px;
+
+}
+@media only screen and (max-width: 1130px){
+  .div1{
+       margin-right: 30px;  
+    }
+    .image{
+        margin-right: 50px;
+    }
+
+
+}
+/* 2eme partie*/
+
+.section0{
+  position: relative;
+  top: 100px;
+  
+}
+.titre{
+    color: #00b39b;
+    font-size: 30px;
+    
+}
+.paragraphe{
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: justify;
+}
+.p1{
+    float: left;
+}
+.p0{
+    float: right;
+}
+.div2{
+    display: flex;
+    flex-direction: row;
+
+}
+@media only screen and (max-width: 1130px){
+    .titre{
+        font-size: 20px;
+    }
+    .paragraphe{
+        margin-left:0px ;
+        margin-right: 0px;
+    }
+    .p1,p2{
+        float: none;
+    }
+    .div2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/*3eme partie*/
+.section1{
+position: relative;
+top: 200px;
+ display: flex;
+flex-direction: row;
+margin-left: 300px;
+
+}
+.cadre{
+    height:  300px;
+    width: 200px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-right: 40px;
+    
+    
+}
+.cadre1{
+   
+    background-color: #00b39b;
+    
+}
+.pcadre{
+color: white;
+font-size:20px;
+text-align:left;
+}
+#p{
+    text-align: left;
+    color: white;
+    margin-bottom: 60px;
+    
+}
+select{
+color: white;    
+background-color: #00b39b;
+border: 0px;
+}
+.cadre2{
+  
+    background-color:#3d83df;
+    
+}
+.select1{
+background-color: #3d83df;
+}
+.cadre3{
+    background-color: #747474;
+
+}
+.select2{
+    background-color:#747474 ;
+
+}
+@media only screen and (max-width: 1130px){
+    .section1{
+        position: relative;
+        top: 200px;
+         display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+    .cadre{
+        height:  200px;
+        width: 50%;
+        border-radius: 15px;
+        padding: 10px;
+        margin-right: 40px;
+        
+        
+    }
+    #p{
+        text-align: left;
+        color: white;
+        margin-bottom: 0px;
+        
+    }
+        
+
+}
+/* 4eme partie*/
+.section2{
+    display: grid;
+    flex-direction: row;
+    grid-template-rows: repeat(2,60px);
+    grid-template-columns: repeat(12,80px);
+    position: relative;
+    top: 250px;
+    left: 200px;
+   gap: 0px 5px;
+  
+}
+#ecriture{
+grid-column: 1/3;
+grid-row:1/2 ;
+}
+#logo1{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    
+}
+#logo2{
+    grid-column:5/6;
+    grid-row: 1/2;
+}
+#logo3{
+    grid-column:7/8 ;
+    grid-row: 1/2;
+
+}
+#logo4{
+    grid-row: 1/2;
+    grid-column: 10/11;
+}
+#logo5{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#logo6{
+    grid-column:5/6;
+    grid-row: 2/3;
+}
+#logo7{
+    grid-column:7/9 ;
+    grid-row: 2/3;
+}
+#logo8{
+    grid-row:2/3 ;
+    grid-column: 10/11; 
+}
+.lastp{
+    color: #00b39b;
+    font-size: 20px;
+    text-align: left;
+}
+@media only screen and (max-width: 1130px){
+    .section2{
+        display: grid;
+        flex-direction: column;
+        grid-template-rows: repeat(2,60px);
+        grid-template-columns: repeat(12,80px);
+        position: relative;
+        top: 250px;
+        left: 0px;
+       gap: 0px 5px;
+      
+    }
+}
+/*      5eme partie*/
+.section3{
+    position: relative;
+    top: 400px;   
+ 
+}
+/*6eme partie*/
+.section4{
+    position: relative;
+    top: 500px;
+   
+}
+table{
+    position: relative;
+    left: 50px;
+    width: 100%;
+    border: 0px;
+
+}
+#ptable{
+  color: #00b39b;
+  font-size: 25px;
+  letter-spacing: 2px;
+
+    
+}
+#bloc{
+  background-color: aliceblue;
+  border: 1px solid aliceblue;
+  display:inline-block;
+  
+}
+#place{
+    color: rgb(160, 160, 160);
+   display:inline-block;
+   position: relative;
+   left: 33px;
+}
+#span{
+    bottom: 0px;
+    border-style: ridge;
+    background-color: #76a4df;
+    color: black;
+}
+/*last part*/
+.div3{
+    position: relative;
+    top: 590px;
+    font-size: 30px;
+}
+button {
+    padding: 10px;
+    background-color: #3d83df;
+    color: #fff;
+    border:1px #3d83df solid;
+  
+}
+footer{
+    position: relative;
+    top: 690px;
+}
